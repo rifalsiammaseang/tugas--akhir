@@ -9,7 +9,7 @@ export default function TransactionsBarChart() {
 
   // Memformat data transaksi untuk ditampilkan dalam grafik
   // Hanya mengambil 15 transaksi pertama
-  const data = transactions.slice(0, 16).map((transaction) => ({
+  const data = transactions.slice(0, 15).map((transaction) => ({
     date: transaction.date, // Tanggal transaksi
     income: transaction.income || 0, // Pendapatan (default 0 jika tidak ada)
     expenses: transaction.expenses || 0, // Pengeluaran (default 0 jika tidak ada)
